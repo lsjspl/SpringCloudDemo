@@ -1,0 +1,17 @@
+
+server:
+  port: 8001
+eureka:
+  instance:
+    appname: ${spring.application.name}
+    hostname: backup
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+          defaultZone: http://master:8000/eureka/
+  server:
+      eviction-interval-timer-in-ms: 10000
+spring:
+  application:
+    name: eurekaserver

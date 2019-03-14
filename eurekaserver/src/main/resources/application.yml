@@ -1,0 +1,16 @@
+
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+          defaultZone: http://${eureka.instance.hostname}:8004/eureka/
+  server:
+    enable-self-preservation: false
+spring:
+  application:
+    name: eurekaserver
