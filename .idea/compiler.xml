@@ -9,6 +9,7 @@
         <module name="eurekaclient" />
         <module name="eurekacustomer" />
         <module name="eurekaserver" />
+        <module name="feigncustomer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
